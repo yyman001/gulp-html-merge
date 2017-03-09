@@ -2,7 +2,7 @@
 
 用于html文件标记范围内容进行指定位置标识填充
 依赖`through-gulp`
-不知道怎么打包到npm,下载代码放到`node_modules`里面就可以了.然后安装`through-gulp`
+
 ## 安装
 ```js
 npm install through-gulp --save
@@ -41,7 +41,7 @@ gulp.task('demo',function(){
    .pipe(gulp.dest('out/'));
 })
 ```
-在目录下有测试文件
+在test目录下有测试文件
 
 ####4.demo文件例子
 demo.html

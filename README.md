@@ -7,6 +7,7 @@
 ```js
 npm install through-gulp --save
 npm install gulp-html-merge --save
+//如果无法安装,可以换cnpm 安装
 ```
 
 ## 使用方法

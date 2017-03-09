@@ -1,0 +1,72 @@
+{
+  "name": "gulp-html-merge",
+  "version": "0.1.0",
+  "description": "静态文件提取替换合并指定标识符位置",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yyman001/gulp-html-merge.git"
+  },
+  "keywords": [
+    "stream",
+    "through",
+    "transform",
+    "gulp",
+    "gulp-plugin"
+  ],
+  "author": {
+    "name": "yyman001",
+    "email": "yyman001@qq.com",
+    "url": "https://github.com/yyman001"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "through-gulp": "^0.5.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.6",
+    "gulp": "^3.8.10",
+    "istanbul": "^0.3.5",
+    "mocha": "^2.3.4",
+    "should": "^8.1.1"
+  },
+  "scripts": {
+    "test-travis": "istanbul cover ./node_modules/.bin/_mocha --report lcovonly"
+  },
+  "license": "MIT",
+  "gitHead": "",
+  "bugs": {
+    "url": "https://github.com/yyman001/gulp-html-merge/issues"
+  },
+  "homepage": "https://github.com/yyman001/gulp-html-merge#readme",
+  "_id": "gulp-html-merge@0.1.0",
+  "_shasum": "",
+  "_from": "through-gulp@*",
+  "_npmVersion": "3.10.10",
+  "_nodeVersion": "4.2.4",
+  "_npmUser": {
+    "name": "yyman001",
+    "email": "yyman001@qq.com"
+  },
+  "dist": {
+    "shasum": "",
+    "size": 0,
+    "noattachment": false,
+    "tarball": ""
+  },
+  "maintainers": [
+    {
+      "name": "yyman001",
+      "email": "yyman001@qq.com"
+    }
+  ],
+  "directories": {},
+  "publish_time": 1453304300111,
+  "_cnpm_publish_time": 1453304300111,
+  "_resolved": "",
+  "readme": "ERROR: No README data found!"
+}

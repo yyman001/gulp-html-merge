@@ -1,6 +1,6 @@
 {
   "name": "gulp-html-merge",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "merge html to html",
   "main": "index.js",
   "directories": {

@@ -162,6 +162,8 @@ demo.html
 </div>
 <p>我是tag1</p>
 
+<!-- @import:tag2 -->
+
 <!-- @import:noTga -->
 </body>
 </html>

@@ -137,4 +137,35 @@ tag.html
 </body>
 </html>
 ```
+####过滤不合并的标签
+```javascript
+let filterTag = ["tag2"]; //过滤标签添加到一个数组,必须的数组
+var htmlMerge = require('gulp-html-merge');
+gulp.task('demo',function(){
+   return gulp.src(['demo.html','tag.html'])
+   .pipe(htmlMerge())
+   .pipe(gulp.dest('out/'));
+})
+```
+结果:
+demo.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    这里是demo测试页
+</div>
+<p>我是tag1</p>
+
+<!-- @import:noTga -->
+</body>
+</html>
+```
+
+
 一般用于多页面分部开发,这样可以把想要的合并到需要的地方

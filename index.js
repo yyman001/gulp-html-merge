@@ -6,10 +6,14 @@ module.exports = htmlMerge;
   var tag = []; //存放扫描的位置标签
   var fileStorage = []; //缓存全部加载文件
   var tagObj = {};  //存放标记内容区域
-function htmlMerge() {
+  var filter = ''; //过滤的标签
+function htmlMerge(data) {
   // creating a stream through which each file will pass
-  
-  
+
+  if( arguments[0] !== undefined && arguments[0].length){
+	  filter = arguments[0].join(',')
+  }
+ 
   var stream = through(function(file, encoding,callback) {
     // do whatever necessary to process the file
     if (file.isNull()) {
@@ -57,11 +61,19 @@ function scanTag(data){
 		  newString = $3.slice(0,lastIndex)
 	  }
 	  
-	  tag.push($2); //存入tag
 	  
-	  if(typeof $2 !== 'undefined'){
-		  tagObj[$2] = newString.replace('\r\n','');
+	  if(!filter || filter.indexOf($2) === -1){  //不是过滤列表
+		  
+		  tag.push($2); //存入tag
+	  
+		  if(typeof $2 !== 'undefined'){
+			  tagObj[$2] = newString.replace('\n','');
+		  }
+	  
 	  }
+	  
+	  
+	  
 	})
 }
 
